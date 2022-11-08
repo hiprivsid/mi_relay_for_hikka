@@ -13,7 +13,11 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class MRH(loader.Module):
-"""Mi Relay """
+    """Mi Relay
+    
+DEV: @hiprivsid
+"""
+
 
 strings = {
      "name": "Mi relay for hikka",
