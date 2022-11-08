@@ -28,20 +28,22 @@ strings = {
 from miio.device import Device
 plug = Device(DEVICE_IP, DEVICE_TOKEN)
 
-def __init__(self):
-self.config = loader.ModuleConfig(
-loader.ConfigValue(
-'DEVICE_IP',
-None,
-"Ip of device"
-),
-loader.ConfigValue(
-'DEVICE_TOKEN',
-None,
-"Token of device"
-)
 
+	def __init__(self):
+		self.config = loader.ModuleConfig(
+			loader.ConfigValue(
+				"DEVICE_IP",
+				None,
+				"Token of device",
+			),
+			loader.ConfigValue(
+				"DEVICE_TOKEN",
+				None,
+				"Token of device",
+			)
+		)
 
+@loader.command()
 
 
 
