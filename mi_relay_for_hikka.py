@@ -17,8 +17,9 @@ await self.allmodules.commands["config"](
     async def client_ready(self, client, db):
         logger.info("сру в логи")
 
+@loader.tds
+class MRH(loader.Module):
 
-	
 strings = {
      "name": "Mi relay for hikka"
     }
