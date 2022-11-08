@@ -14,9 +14,6 @@ logger = logging.getLogger(__name__)
 from miio.device import Device
 plug = Device(DEVICE_IP, DEVICE_TOKEN)
 
-    async def client_ready(self, client, db):
-        logger.info("сру в логи")
-
 @loader.tds
 class MRH(loader.Module):
 """Mi Relay """
