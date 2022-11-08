@@ -13,6 +13,11 @@ await self.allmodules.commands["config"](
 	await utils.answer(message, f"{self.get_prefix()}config mirelay")
 )
 
+async def client_ready(self):
+
+)
+
+
 def __init__(self):
 self.config = loader.ModuleConfig(
 loader.ConfigValue(
