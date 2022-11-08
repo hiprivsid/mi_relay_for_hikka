@@ -33,11 +33,15 @@ self.config = loader.ModuleConfig(
 loader.ConfigValue(
 'DEVICE_IP',
 None,
-"Ip of device";
+"Ip of device"
+),
+loader.ConfigValue(
 'DEVICE_TOKEN',
 None,
 "Token of device"
 )
+
+
 
 
 
