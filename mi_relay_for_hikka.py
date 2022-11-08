@@ -34,12 +34,12 @@ plug = Device(DEVICE_IP, DEVICE_TOKEN)
 			loader.ConfigValue(
 				"DEVICE_IP",
 				None,
-				"Token of device",
+				"Token of device"
 			),
 			loader.ConfigValue(
 				"DEVICE_TOKEN",
 				None,
-				"Token of device",
+				"Token of device"
 			)
 		)
 
