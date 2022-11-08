@@ -17,6 +17,9 @@ async def client_ready(self):
 
 )
 
+strings = {
+     "name": "Mi relay for hikka"
+    }
 
 def __init__(self):
 self.config = loader.ModuleConfig(
