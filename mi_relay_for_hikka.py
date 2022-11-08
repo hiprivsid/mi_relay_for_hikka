@@ -35,15 +35,13 @@ loader.ConfigValue(
 None,
 "Ip of device"
 )
-)
-def __init__(self):
-self.config = loader.ModuleConfig(
 loader.ConfigValue(
 'DEVICE_TOKEN',
 None,
 "Token of device"
 )
 )
+
 
 
 
