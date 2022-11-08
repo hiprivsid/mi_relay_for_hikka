@@ -28,7 +28,7 @@ self.config = loader.ModuleConfig(
 loader.ConfigValue(
 'DEVICE_IP',
 None,
-doc=lambda: "Ip of device"
+"Ip of device"
 )
 )
 def __init__(self):
@@ -36,9 +36,11 @@ self.config = loader.ModuleConfig(
 loader.ConfigValue(
 'DEVICE_TOKEN',
 None,
-doc=lambda: "Token of device"
+"Token of device"
 )
 )
+
+
 
 async def relayon(self, call: InlineCall):
                 DEVICE_IP = self.config['DEVICE_IP']
