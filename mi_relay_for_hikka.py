@@ -1,11 +1,12 @@
 __version__ = (1, 0, 0)
 
 
-from .. import loader, utils
-
-from telethon.tl.types import Message
+from .. import loader
 from ..inline.types import InlineCall
 
+import random
+import requests
+import logging
 from miio.device import Device
 plug = Device(DEVICE_IP, DEVICE_TOKEN)
 
@@ -13,8 +14,11 @@ await self.allmodules.commands["config"](
 	await utils.answer(message, f"{self.get_prefix()}config mirelay")
 )
 
+    async def client_ready(self, client, db):
+        logger.info("сру в логи")
 
 
+	
 strings = {
      "name": "Mi relay for hikka"
     }
