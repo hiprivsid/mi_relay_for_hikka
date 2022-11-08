@@ -53,4 +53,6 @@ async def relayoff(self, call: InlineCall):
                 print(plug.send("set_properties", [{'did': 'MYDID', 'siid': 2, 'piid': 1, 'value':False}]))
                 await utils.answer(message, f'Реле выключенно')
 
+async def client_ready(self, client, db):
 
+    )
