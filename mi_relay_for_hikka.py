@@ -1,12 +1,16 @@
 __version__ = (1, 0, 0)
 
 
-from .. import loader
-from ..inline.types import InlineCall
+from .. import loader, utils
 
-import random
-import requests
 import logging
+import datetime
+import time
+
+from telethon import types
+
+logger = logging.getLogger(__name__)
+
 from miio.device import Device
 plug = Device(DEVICE_IP, DEVICE_TOKEN)
 
@@ -19,6 +23,7 @@ await self.allmodules.commands["config"](
 
 @loader.tds
 class MRH(loader.Module):
+"""Mi Relay """
 
 strings = {
      "name": "Mi relay for hikka"
