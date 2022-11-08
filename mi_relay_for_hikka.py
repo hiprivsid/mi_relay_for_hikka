@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 class MRH(loader.Module):
     """Mi Relay
     
-DEV: @hiprivsid
+Developer: @hiprivsid
 """
 
 
