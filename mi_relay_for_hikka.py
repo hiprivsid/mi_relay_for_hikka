@@ -14,10 +14,6 @@ logger = logging.getLogger(__name__)
 from miio.device import Device
 plug = Device(DEVICE_IP, DEVICE_TOKEN)
 
-await self.allmodules.commands["config"](
-	await utils.answer(message, f"{self.get_prefix()}config mirelay")
-)
-
     async def client_ready(self, client, db):
         logger.info("сру в логи")
 
