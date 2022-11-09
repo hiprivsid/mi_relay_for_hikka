@@ -48,15 +48,15 @@ class MRH(loader.Module):
 
 
 
-@loader.command()
-async def relayon(self, message: Message):
-                Device(self.config['DEVICE_IP'], self.config['DEVICE_TOKEN']).send("set_properties", [{'did': 'MYDID', 'siid': 2, 'piid': 1, 'value':True}])
-                await utils.answer(message, self.strings("relaytrue", message))
+
+     async def relayon(self, message):
+           Device(self.config['DEVICE_IP'], self.config['DEVICE_TOKEN']).send("set_properties", [{'did': 'MYDID', 'siid': 2, 'piid': 1, 'value':True}])
+           await utils.answer(message, self.strings("relaytrue", message))
 
 
-@loader.command()          
-async def relayoff(self, message: Message):
-                Device(self.config['DEVICE_IP'], self.config['DEVICE_TOKEN']).send("set_properties", [{'did': 'MYDID', 'siid': 2, 'piid': 1, 'value':False}])
-                await utils.answer(message, self.strings("relayfalse", message))
+         
+     async def relayoff(self, message):
+           Device(self.config['DEVICE_IP'], self.config['DEVICE_TOKEN']).send("set_properties", [{'did': 'MYDID', 'siid': 2, 'piid': 1, 'value':False}])
+           await utils.answer(message, self.strings("relayfalse", message))
 
 
