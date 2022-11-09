@@ -14,10 +14,7 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class MRH(loader.Module):
-    """Mi Relay
-    
-Developer: @hiprivsid
-"""
+developer = "@hiprivsid"
 
 
 strings = {
@@ -32,19 +29,22 @@ plug = Device(DEVICE_IP, DEVICE_TOKEN)
 
 
 
-		self.config = loader.ModuleConfig(
-			loader.ConfigValue(
-				"DEVICE_IP",
-				None,
-				"Token of device"
-			),
-			loader.ConfigValue(
-				"DEVICE_TOKEN",
-				None,
-				"Token of device"
-			)
-		)
-
+    def __init__(self):
+        # loader.ModuleConfig will throw!
+        self.config = loader.LibraryConfig(
+            loader.ConfigValue(
+                ""DEVICE_IP",
+                None,
+                "Token of device"",
+                validator=loader.validators.String(),
+            ),
+            loader.ConfigValue(
+		"DEVICE_TOKEN",
+                None,
+		"Token of device"
+                validator=loader.validators.String(),
+	    )
+        )
 
 
 
