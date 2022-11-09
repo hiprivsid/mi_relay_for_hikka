@@ -34,13 +34,13 @@ class MRH(loader.Module):
             loader.ConfigValue(
                 "DEVICE_IP",
                 None,
-                "Token of device",
+                "Device IP address",
                 validator=loader.validators.String(),
             ),
             loader.ConfigValue(
 		"DEVICE_TOKEN",
                 None,
-		"Token of device"
+		"Device token"
                 validator=loader.validators.String(),
 	    )
         )
