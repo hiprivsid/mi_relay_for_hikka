@@ -27,7 +27,7 @@ strings = {
 
 async def client_ready(self, client, db):
 	self._db = db
-	self._me = await client.get_me()
+
 
 from miio.device import Device
 plug = Device(DEVICE_IP, DEVICE_TOKEN)
