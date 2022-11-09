@@ -21,13 +21,13 @@ Developer: @hiprivsid
 
 
 strings = {
-     "name": "Mi relay for hikka",
+     "name": "Mi_relay _for_hikka",
      "relayfalse": "Relay disabled",
      "relaytrue": "Relay enabled"
     }
 
 async def client_ready(self, client, db):
-	self._db = db
+
 
 
 from miio.device import Device
