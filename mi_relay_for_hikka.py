@@ -32,13 +32,13 @@ class MRH(loader.Module):
         self.config = loader.LibraryConfig(
             loader.ConfigValue(
                 "DEVICE_IP",
-                None,
+                "192.168.0.30",
                 "Device IP address",
                 validator=loader.validators.String(),
             ),
             loader.ConfigValue(
 		"DEVICE_TOKEN",
-                None,
+                "token alo",
 		"Device token",
                 validator=loader.validators.String(),
 	    )
