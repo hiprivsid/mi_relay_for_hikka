@@ -50,17 +50,13 @@ class MRH(loader.Module):
 
 @loader.command()
 async def relayon(self, message):
-                DEVICE_IP = self.config['DEVICE_IP']
-                DEVICE_TOKEN = self.config['DEVICE_TOKEN']
-                plug = Device(DEVICE_IP, DEVICE_TOKEN)
+                plug = Device(self.config['DEVICE_IP'], self.config['DEVICE_TOKEN'])
                 plug.send("set_properties", [{'did': 'MYDID', 'siid': 2, 'piid': 1, 'value':True}])
                 await utils.answer(message, 'relaytrue')
 
 @loader.command()          
 async def relayoff(self, message):
-                DEVICE_IP = self.config['DEVICE_IP']
-                DEVICE_TOKEN = self.config['DEVICE_TOKEN']
-		plug = Device(DEVICE_IP, DEVICE_TOKEN)
+                plug = Device(self.config['DEVICE_IP'], self.config['DEVICE_TOKEN'])
                 plug.send("set_properties", [{'did': 'MYDID', 'siid': 2, 'piid': 1, 'value':False}])
                 await utils.answer(message, 'relayfalse')
 
