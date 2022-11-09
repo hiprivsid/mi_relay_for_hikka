@@ -38,7 +38,7 @@ class MRH(loader.Module):
             ),
             loader.ConfigValue(
 		"DEVICE_TOKEN",
-                "token alo",
+                "token",
 		"Device token",
                 validator=loader.validators.String(),
 	    )
