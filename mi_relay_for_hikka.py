@@ -1,5 +1,6 @@
 __version__ = (1, 0, 0)
-
+# requires: miio
+# meta developer: @hiprivsidsmods
 
 from .. import loader, utils
 
