@@ -16,15 +16,15 @@ from telethon.tl.types import Message
 @loader.tds
 class MRH(loader.Module):
  
-strings = {
-     "name": "Mi_relay_for_hikka",
-     "relayfalse": "Relay disabled",
-     "relaytrue": "Relay enabled"
+    strings = {
+        "name": "Mi_relay_for_hikka",
+        "relayfalse": "Relay disabled",
+        "relaytrue": "Relay enabled"
     }
 
 
-from miio.device import Device
-plug = Device(DEVICE_IP, DEVICE_TOKEN)
+    from miio.device import Device
+    plug = Device(DEVICE_IP, DEVICE_TOKEN)
 
 
 
