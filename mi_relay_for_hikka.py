@@ -26,9 +26,6 @@ strings = {
      "relaytrue": "Relay enabled"
     }
 
-async def client_ready(self, client, db):
-
-
 
 from miio.device import Device
 plug = Device(DEVICE_IP, DEVICE_TOKEN)
@@ -67,6 +64,4 @@ async def relayoff(self, message):
                 plug.send("set_properties", [{'did': 'MYDID', 'siid': 2, 'piid': 1, 'value':False}])
                 await utils.answer(message, 'relayfalse')
 
-async def client_ready(self, client, db):
 
-    )
