@@ -15,10 +15,8 @@ logger = logging.getLogger(__name__)
 @loader.tds
 class MRH(loader.Module):
  
-
-
 strings = {
-     "name": "Mi_relay _for_hikka",
+     "name": "Mi_relay_for_hikka",
      "relayfalse": "Relay disabled",
      "relaytrue": "Relay enabled"
     }
