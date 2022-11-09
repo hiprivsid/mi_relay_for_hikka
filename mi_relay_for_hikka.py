@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class MRH(loader.Module):
-
+ 
 
 
 strings = {
