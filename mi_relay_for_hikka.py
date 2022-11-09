@@ -40,7 +40,7 @@ class MRH(loader.Module):
             loader.ConfigValue(
 		"DEVICE_TOKEN",
                 None,
-		"Device token"
+		"Device token",
                 validator=loader.validators.String(),
 	    )
         )
