@@ -32,7 +32,7 @@ class MRH(loader.Module):
         # loader.ModuleConfig will throw!
         self.config = loader.LibraryConfig(
             loader.ConfigValue(
-                ""DEVICE_IP",
+                "DEVICE_IP",
                 None,
                 "Token of device"",
                 validator=loader.validators.String(),
