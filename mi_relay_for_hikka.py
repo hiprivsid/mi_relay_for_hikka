@@ -6,7 +6,6 @@ from .. import loader, utils
 import logging
 import datetime
 import time
-from miio.device import Device
 
 from telethon import types
 from telethon.tl.types import Message
@@ -28,7 +27,7 @@ strings = {
     }
 
 
-
+from miio.device import Device
 plug = Device(DEVICE_IP, DEVICE_TOKEN)
 
 
